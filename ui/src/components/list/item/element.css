@@ -1,0 +1,8 @@
+.element {
+    flex: 1;
+}
+
+.blur {
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    color: transparent;
+}

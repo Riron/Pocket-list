@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    padding: 0;
+    background: #4385f6;
+
+    z-index: 50;
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    padding: 0 15px;
+    font-size: 24px;
+    line-height: 56px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header nav {
+    float: right;
+    font-size: 100%;
+}
+
+.header nav a {
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 15px;
+    min-width: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: #fff;
+    will-change: background-color;
+}
+
+.header nav a:hover,
+.header nav a:active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header nav a.active {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.search {
+    position: relative;
+}
+
+.search .search-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.search .searchInput {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    padding-left: 3.25rem;
+    font-size: inherit;
+    line-height: 1;
+    font-family: inherit;
+    color: inherit;
+    background: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 0;
+    appearance: none;
+    outline: 0;
+}

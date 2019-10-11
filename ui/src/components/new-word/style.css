@@ -1,0 +1,26 @@
+.new-word {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background: #4385f6;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.18),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 0 10px 10px 10px;
+    transition: transform 200ms ease-in-out;
+    transform: translateY(80%);
+}
+
+.new-word .header {
+    color: #f9fafb;
+    text-align: center;
+    transition: transform 150ms ease-in-out 200ms;
+}
+
+.new-word.opened {
+    transform: translateY(0);
+}
+.new-word.opened .header {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,13 @@
+{
+  "name": "pocket-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy-front": "cd ui && npx preact build --no-prerender && npx firebase-tools deploy --only hosting",
+    "deploy-functions": "npx firebase-tools deploy --only functions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
