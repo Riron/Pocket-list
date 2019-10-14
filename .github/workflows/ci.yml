@@ -13,18 +13,22 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: Build front
+    - name: Test & Build front
       run: |
         cd ui
         npm install
         npm test
         npm run build
-    - name: Archive UI Production Artifact
+    - name: Archive UI Artifact
       uses: actions/upload-artifact@master
       with:
         name: ui-build
         path: ui/build
-    - name: Archive Functions Production Artifact
+    - name: Install functions dependencies
+      run: |
+        cd functions
+        npm install
+    - name: Archive Functions Artifact
       uses: actions/upload-artifact@master
       with:
         name: functions
